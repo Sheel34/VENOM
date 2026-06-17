@@ -35,16 +35,28 @@
 
 <div align="center">
 
-<video src="https://github.com/Sheel34/VENOM/raw/main/assets/venom-demo.mp4" poster="https://github.com/Sheel34/VENOM/raw/main/assets/venom-thumb.jpg" controls playsinline width="82%"></video>
+<!-- ┌────────────────────────────────────────────────────────────────────┐
+     │  INLINE PLAYER — ONE STEP TO ENABLE                                 │
+     │  GitHub only plays videos uploaded as "attachments" (it serves them │
+     │  as real video/mp4). A repo-hosted .mp4 is sent as octet-stream and │
+     │  will NOT play inline — so we host it as an attachment:             │
+     │                                                                     │
+     │   1. Open this README on github.com → click the ✏️ pencil (Edit).   │
+     │   2. Drag  assets/venom-demo.mp4  onto the editor, on the blank     │
+     │      line just below this comment. Wait for the upload to finish —  │
+     │      GitHub inserts a line like:                                    │
+     │        https://github.com/user-attachments/assets/<uuid>            │
+     │   3. DELETE the thumbnail <img> line below (keep the uploaded URL). │
+     │   4. Commit. An inline play-in-place player now renders here.       │
+     └────────────────────────────────────────────────────────────────────┘ -->
+
+<img src="assets/venom-thumb.jpg" width="82%" alt="VENOM — bomb-disposal robotic arm controlled by bare-hand motion capture">
 
 <br/>
 
-<sub>A bare hand moves &#8594; the arm mirrors it in real time. Press play — it streams right here, fullscreen optional. No tab-hopping.</sub>
+<sub>A bare hand moves &#8594; the arm mirrors it in real time. (Drag-drop the demo `.mp4` here once — see the comment above — and this thumbnail becomes a play-in-place player.)</sub>
 
 </div>
-
-> [!NOTE]
-> **Not playing on your phone?** GitHub serves a repo-hosted `.mp4` as a plain download on iOS, so the inline player can go blank there. For a player that works on **every** device, swap the line above for a GitHub-hosted upload: open this README in the GitHub editor (pencil), **drag `assets/venom-demo.mp4` onto the page**, wait for the `…/user-attachments/assets/…` link to appear, and commit. That URL plays everywhere.
 
 <img src="assets/divider.svg" width="100%" alt="">
 
