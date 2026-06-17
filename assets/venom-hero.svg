@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="VENOM - Vector Enhanced Neutralization and Explosive Ordnance Manipulation">
   <defs>
     <radialGradient id="bgGlow" cx="50%" cy="62%" r="75%">
-      <stop offset="0%" stop-color="#0a1f12"/>
-      <stop offset="45%" stop-color="#05130b"/>
-      <stop offset="100%" stop-color="#020604"/>
+      <stop offset="0%" stop-color="#2a1712"/>
+      <stop offset="45%" stop-color="#15100b"/>
+      <stop offset="100%" stop-color="#0a0706"/>
     </radialGradient>
     <linearGradient id="titleFill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#d6ffe6"/>
-      <stop offset="42%" stop-color="#39ff14"/>
-      <stop offset="100%" stop-color="#06b34a"/>
+      <stop offset="0%" stop-color="#f5efe4"/>
+      <stop offset="48%" stop-color="#dccfb8"/>
+      <stop offset="100%" stop-color="#b1a288"/>
     </linearGradient>
     <linearGradient id="scanFade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#39ff14" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#39ff14" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#39ff14" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#e0392f" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#e0392f" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#e0392f" stop-opacity="0"/>
     </linearGradient>
     <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="6" result="b1"/>
-      <feGaussianBlur stdDeviation="14" result="b2"/>
+      <feGaussianBlur stdDeviation="5" result="b1"/>
+      <feGaussianBlur stdDeviation="12" result="b2"/>
       <feMerge>
         <feMergeNode in="b2"/>
         <feMergeNode in="b1"/>
@@ -32,11 +32,11 @@
       </feMerge>
     </filter>
     <style>
-      @keyframes flick { 0%,100%{opacity:1} 47%{opacity:.92} 50%{opacity:.6} 53%{opacity:.95} 78%{opacity:.85} }
+      @keyframes flick { 0%,100%{opacity:1} 47%{opacity:.94} 50%{opacity:.7} 53%{opacity:.96} 78%{opacity:.88} }
       @keyframes breathe { 0%,100%{opacity:.55} 50%{opacity:1} }
       @keyframes drift { 0%{transform:translateY(0)} 50%{transform:translateY(-10px)} 100%{transform:translateY(0)} }
       @keyframes scanY { 0%{transform:translateY(0);opacity:0} 8%{opacity:.9} 92%{opacity:.9} 100%{transform:translateY(300px);opacity:0} }
-      @keyframes gridPulse { 0%,100%{opacity:.32} 50%{opacity:.6} }
+      @keyframes gridPulse { 0%,100%{opacity:.26} 50%{opacity:.5} }
       @keyframes dash { to{stroke-dashoffset:-200} }
       .title{ font-family:'Arial Black','Helvetica Neue',Arial,sans-serif; font-weight:900; animation:flick 6s infinite ease-in-out; }
       .grid{ animation:gridPulse 5s infinite ease-in-out; }
@@ -52,7 +52,7 @@
   <rect width="1200" height="440" fill="url(#bgGlow)"/>
 
   <!-- 3D perspective floor grid -->
-  <g class="grid" stroke="#1eff7a" stroke-opacity="0.5" stroke-width="1">
+  <g class="grid" stroke="#7a4a39" stroke-opacity="0.5" stroke-width="1">
     <!-- converging verticals to vanishing point (600,250) -->
     <line x1="600" y1="250" x2="-260" y2="440"/>
     <line x1="600" y1="250" x2="20" y2="440"/>
@@ -77,11 +77,11 @@
   </g>
 
   <!-- horizon glow -->
-  <rect class="pulse" x="300" y="248" width="600" height="3" fill="#39ff14" filter="url(#softGlow)" opacity="0.7"/>
-  <ellipse cx="600" cy="250" rx="380" ry="22" fill="#39ff14" opacity="0.10" filter="url(#neon)"/>
+  <rect class="pulse" x="300" y="248" width="600" height="3" fill="#e0392f" filter="url(#softGlow)" opacity="0.8"/>
+  <ellipse cx="600" cy="250" rx="380" ry="22" fill="#e0392f" opacity="0.12" filter="url(#neon)"/>
 
   <!-- ambient particles -->
-  <g fill="#39ff14" filter="url(#softGlow)">
+  <g fill="#e0392f" filter="url(#softGlow)">
     <circle class="p1" cx="160" cy="120" r="2.5" opacity="0.8"/>
     <circle class="p2" cx="280" cy="190" r="1.8" opacity="0.6"/>
     <circle class="p3" cx="980" cy="90" r="2.2" opacity="0.7"/>
@@ -93,31 +93,33 @@
   </g>
 
   <!-- top + bottom accent rails -->
-  <rect x="0" y="0" width="1200" height="2" fill="#114e2c"/>
-  <rect x="0" y="438" width="1200" height="2" fill="#114e2c"/>
-  <rect class="pulse" x="430" y="22" width="340" height="2" fill="#39ff14" filter="url(#softGlow)"/>
+  <rect x="0" y="0" width="1200" height="2" fill="#4d3b30"/>
+  <rect x="0" y="438" width="1200" height="2" fill="#4d3b30"/>
+  <rect class="pulse" x="430" y="22" width="340" height="2" fill="#e0392f" filter="url(#softGlow)"/>
 
   <!-- eyebrow -->
-  <text x="600" y="86" text-anchor="middle" fill="#7dffb0" font-family="'Courier New',monospace" font-size="15" letter-spacing="7" opacity="0.9">HUMAN&#160;&#160;MOTION&#160;&#160;&#8594;&#160;&#160;ROBOTIC&#160;&#160;PRECISION</text>
+  <text x="600" y="86" text-anchor="middle" fill="#d8c9a8" font-family="'Courier New',monospace" font-size="15" letter-spacing="7" opacity="0.92">HUMAN&#160;&#160;MOTION&#160;&#160;&#8594;&#160;&#160;ROBOTIC&#160;&#160;PRECISION</text>
 
   <!-- TITLE -->
   <g filter="url(#neon)">
     <text class="title" x="600" y="190" text-anchor="middle" fill="url(#titleFill)" font-size="132" letter-spacing="10">VENOM</text>
   </g>
+  <!-- crimson laser underline (thumbnail signature) -->
+  <rect class="pulse" x="476" y="206" width="248" height="2.4" fill="#e0392f" filter="url(#softGlow)"/>
 
   <!-- expansion / tagline -->
-  <text x="600" y="226" text-anchor="middle" fill="#baffd4" font-family="'Arial',sans-serif" font-size="16.5" letter-spacing="3.2" opacity="0.95">VECTOR&#160;ENHANCED&#160;NEUTRALIZATION&#160;&amp;&#160;EXPLOSIVE&#160;ORDNANCE&#160;MANIPULATION</text>
+  <text x="600" y="232" text-anchor="middle" fill="#cbb189" font-family="'Arial',sans-serif" font-size="16.5" letter-spacing="3.2" opacity="0.95">VECTOR&#160;ENHANCED&#160;NEUTRALIZATION&#160;&amp;&#160;EXPLOSIVE&#160;ORDNANCE&#160;MANIPULATION</text>
 
   <!-- mission line on the floor -->
-  <text x="600" y="320" text-anchor="middle" fill="#5ef598" font-family="'Courier New',monospace" font-size="13.5" letter-spacing="2" opacity="0.92">[ &#160;MOTION-CAPTURE&#160;CONTROLLED&#160;&#183;&#160;DUAL-ARM&#160;EOD&#160;ROBOT&#160;&#183;&#160;RTOS&#160;REAL-TIME&#160;&#160;]</text>
+  <text x="600" y="320" text-anchor="middle" fill="#c2a878" font-family="'Courier New',monospace" font-size="13.5" letter-spacing="2" opacity="0.92">[ &#160;MOTION-CAPTURE&#160;CONTROLLED&#160;&#183;&#160;DUAL-ARM&#160;EOD&#160;ROBOT&#160;&#183;&#160;RTOS&#160;REAL-TIME&#160;&#160;]</text>
 
   <!-- runner line under mission -->
-  <line class="runner" x1="380" y1="338" x2="820" y2="338" stroke="#39ff14" stroke-width="2" opacity="0.8"/>
+  <line class="runner" x1="380" y1="338" x2="820" y2="338" stroke="#e0392f" stroke-width="2" opacity="0.85"/>
 
   <!-- award chip -->
   <g class="pulse" transform="translate(600,372)">
-    <rect x="-150" y="0" width="300" height="30" rx="15" fill="none" stroke="#39ff14" stroke-opacity="0.6"/>
-    <text x="0" y="20" text-anchor="middle" fill="#d6ffe6" font-family="'Arial',sans-serif" font-size="13" letter-spacing="2">&#9733; NATIONAL HACKATHON WINNER &#183; 2025</text>
+    <rect x="-150" y="0" width="300" height="30" rx="15" fill="none" stroke="#e0392f" stroke-opacity="0.65"/>
+    <text x="0" y="20" text-anchor="middle" fill="#efe7d8" font-family="'Arial',sans-serif" font-size="13" letter-spacing="2">&#9733; NATIONAL HACKATHON WINNER &#183; 2025</text>
   </g>
 
   <!-- sweeping scan line -->
